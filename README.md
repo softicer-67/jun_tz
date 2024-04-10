@@ -10,5 +10,6 @@
     
         user: admin
         password: 123
-  menu:
+  Menu:
+        
         http://127.0.0.1:8000
