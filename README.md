@@ -5,9 +5,9 @@
     4. pip install -r requirements.txt
     5. run python manage.py runserver localhost:8000
   
-  Django:        
-        http://127.0.0.1:8000/admin
-    
+  Django:
+  
+        http://127.0.0.1:8000/admin    
         user: admin
         password: 123
   Menu:
