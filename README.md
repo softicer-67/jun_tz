@@ -2,8 +2,8 @@
 
     1. git clone https://github.com/softicer-67/jun_tz.git
     2. cd jun_tz
-    4. pip install -r requirements.txt
-    5. run python manage.py runserver localhost:8000
+    3. pip install -r requirements.txt
+    4. python manage.py runserver localhost:8000
   
   Django:
   
