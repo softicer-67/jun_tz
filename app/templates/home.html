@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% if menu %}
+    <ul>
+        {% for item in menu.children.all %}
+            <li>
+                <a href="{{ item.url }}" {% if request.path == item.url %}class="active"{% endif %}>
+                    {{ item.title }}
+                </a>
+                {% if item.children.exists %}
+                    <ul>
+                        {% for child in item.children.all %}
+                            <li>
+                                <a href="{{ child.url }}" {% if request.path == child.url %}class="active"{% endif %}>
+                                    {{ child.title }}
+                                </a>
+                                {% if child.children.exists %}
+                                    <!-- Рекурсивно вызываем шаблон для дочерних элементов -->
+                                    {% include 'base.html' with menu=child %}
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}

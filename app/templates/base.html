@@ -1,0 +1,18 @@
+{% load menu_tags %}
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+<h1>My Website</h1>
+
+    <!-- Отображаем меню -->
+    {% draw_menu "main_menu" %}
+
+<p>Welcome to our website!</p>
+
+</body>

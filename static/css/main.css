@@ -1,0 +1,40 @@
+/* Стилизация основного списка меню */
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+/* Стилизация элементов меню */
+
+
+/* Стилизация ссылок */
+ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+/* Стилизация подменю */
+ul ul {
+    display: none;
+    padding-left: 20px; /* Отступ для вложенных пунктов меню */
+    padding-TOP: 5px;
+}
+
+li li {
+    padding-left: 20px; /* Отступ для вложенных пунктов меню */
+    padding-TOP: 5px;
+}
+
+/* Отображение подменю при наведении на пункт */
+ul li:hover > ul {
+    display: block;
+}
+
+ul li li:hover > ul {
+    display: block;
+}
+
+/* Стилизация для элементов меню */
+ul li a:hover {
+    color: black;
+}
