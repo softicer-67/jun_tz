@@ -1,9 +1,17 @@
 > ### jun_tz
 
-    1. git clone https://github.com/softicer-67/jun_tz.git
-    2. cd jun_tz
-    3. pip install -r requirements.txt
-    4. python manage.py runserver localhost:8000
+```
+git clone https://github.com/softicer-67/jun_tz.git
+```
+```
+cd jun_tz
+```
+```
+pip install -r requirements.txt
+```
+```
+python manage.py runserver localhost:8000
+```
   
   Django:
   
